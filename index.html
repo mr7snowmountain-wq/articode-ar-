@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AR sur Packaging — Articode | Réalité Augmentée Maroc</title>
+<meta name="description" content="Transformez votre packaging en expérience virale. 1,6 million de produits vendus. Articode — réalité augmentée Maroc. Aucune application requise.">
+<meta name="keywords" content="réalité augmentée packaging Maroc, AR produits Maroc, Articode Casablanca, packaging interactif Maroc">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://articode.ma/ar-packaging">
+<meta property="og:title" content="Votre packaging peut vendre tout seul — Articode AR">
+<meta property="og:description" content="1,6M produits vendus. 340K scans. Zéro app. Articode transforme votre packaging en machine à vendre.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"AR sur Packaging — Articode","description":"Réalité augmentée sur packaging. Animation, musique, contenu interactif. Aucune application requise.","provider":{"@type":"Organization","name":"Articode","url":"https://articode.ma","telephone":"+212628958487","email":"groupetijara@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Casablanca","addressCountry":"MA"}},"areaServed":["MA","ES","DE","BR"],"serviceType":"Réalité Augmentée"}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:#08080F;color:#E0E0F0;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+:root{
+  --grad:linear-gradient(135deg,#4A7FE8 0%,#8B4FD4 40%,#D040A0 70%,#FF8C00 100%);
+  --gtext:linear-gradient(135deg,#6AA3FF 0%,#B07FF0 40%,#E870C8 70%,#FFB040 100%);
+  --s1:#0F0F1C;--s2:#131320;--s3:#18182E;
+  --bd:rgba(255,255,255,0.07);--bd2:rgba(255,255,255,0.13);
+  --mu:rgba(255,255,255,0.42);--r:14px;
+}
+.g{background:var(--gtext);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+
+/* ── NAV ── */
+.nav{position:sticky;top:0;z-index:100;background:rgba(8,8,15,.93);backdrop-filter:blur(18px);border-bottom:1px solid var(--bd);padding:13px 5%;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.nl{display:flex;align-items:center;gap:11px;font-family:'Syne',sans-serif;font-weight:800;font-size:19px;letter-spacing:-.03em;color:#fff}
+.nl img{width:34px;height:34px;border-radius:8px;object-fit:contain;background:#fff;padding:2px}
+.nc{display:inline-flex;align-items:center;gap:8px;background:var(--grad);color:#fff;padding:10px 22px;border-radius:10px;font-size:13.5px;font-weight:700;transition:opacity .2s,transform .2s;box-shadow:0 4px 24px rgba(139,79,212,.4)}
+.nc:hover{opacity:.85;transform:translateY(-1px)}
+
+/* ── HERO ── */
+.hero{position:relative;overflow:hidden;background:var(--s1)}
+.orb1{position:absolute;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(139,79,212,.2) 0%,transparent 65%);top:-250px;right:-150px;pointer-events:none}
+.orb2{position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(74,127,232,.13) 0%,transparent 65%);bottom:-150px;left:-100px;pointer-events:none}
+
+.hero-top{max-width:1100px;margin:0 auto;padding:88px 5% 52px;display:grid;grid-template-columns:1fr 400px;gap:52px;align-items:center;position:relative;z-index:1}
+.htag{display:inline-flex;align-items:center;gap:8px;background:rgba(139,79,212,.1);border:1px solid rgba(139,79,212,.28);border-radius:20px;padding:5px 16px;font-size:11px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:#B07FF0;margin-bottom:22px}
+.htag::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--grad);flex-shrink:0}
+h1{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(34px,5vw,60px);letter-spacing:-.045em;line-height:.97;color:#fff;margin-bottom:20px}
+.hsub{font-size:17px;color:var(--mu);line-height:1.65;margin-bottom:32px}
+.hsub strong{color:rgba(255,255,255,.8);font-weight:600}
+.hbtns{display:flex;gap:12px;flex-wrap:wrap}
+.bm{display:inline-flex;align-items:center;gap:9px;background:var(--grad);color:#fff;padding:15px 30px;border-radius:11px;font-size:15px;font-weight:700;transition:opacity .2s,transform .2s;box-shadow:0 6px 36px rgba(139,79,212,.42)}
+.bm:hover{opacity:.85;transform:translateY(-2px)}
+.bs{display:inline-flex;align-items:center;gap:9px;border:1px solid var(--bd2);color:rgba(255,255,255,.65);padding:15px 24px;border-radius:11px;font-size:14px;font-weight:500;transition:all .2s}
+.bs:hover{border-color:rgba(255,255,255,.3);color:#fff;background:rgba(255,255,255,.04)}
+
+/* Stats panel */
+.sp{background:var(--s2);border:1px solid var(--bd);border-radius:var(--r);padding:22px 20px;display:flex;flex-direction:column;gap:12px;position:relative;overflow:hidden}
+.sp::before{content:'';position:absolute;inset:0;border-radius:inherit;padding:1px;background:var(--grad);-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
+.sr{display:flex;align-items:center;gap:13px;padding:12px 14px;background:rgba(255,255,255,.03);border:1px solid var(--bd);border-radius:11px;transition:background .2s}
+.sr:hover{background:rgba(255,255,255,.055)}
+.snum{font-family:'Syne',sans-serif;font-weight:800;font-size:26px;letter-spacing:-.05em;background:var(--gtext);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1;flex-shrink:0;min-width:76px}
+.slbl{font-size:12.5px;font-weight:600;color:#fff;margin-bottom:1px}
+.ssub{font-size:11px;color:var(--mu)}
+
+/* ── HOOK RAPIDE (bullets avant image) ── */
+.hook-bar{background:var(--s2);border-top:1px solid var(--bd);border-bottom:1px solid var(--bd);padding:20px 5%;position:relative;z-index:1}
+.hook-bar-in{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--bd)}
+.hb-step{background:var(--s2);padding:20px 24px;display:flex;align-items:flex-start;gap:0;transition:background .2s;border-left:2px solid transparent}
+.hb-step:hover{background:var(--s3);border-left-color:#B07FF0}
+.hb-num{display:none}
+.hb-num{font-family:'Syne',sans-serif;font-weight:800;font-size:10px;letter-spacing:.12em;background:var(--gtext);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;display:block;margin-bottom:3px}
+.hb-title{font-size:13px;font-weight:700;color:#fff;margin-bottom:2px}
+.hb-desc{font-size:11.5px;color:var(--mu);line-height:1.5}
+
+/* ── IMAGE PLACEHOLDER ── */
+.img-wrap{max-width:1100px;margin:0 auto;padding:28px 5% 0;position:relative;z-index:1}
+.img-ph{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;background:var(--s2);border-radius:20px;border:2px dashed rgba(139,79,212,.32);color:rgba(139,79,212,.6);text-align:center;padding:28px}
+.ip-ico{font-size:34px;margin-bottom:2px}
+.ip-title{font-size:13px;font-weight:700;color:rgba(139,79,212,.85)}
+.ip-theme{font-size:11px;color:var(--mu);max-width:540px;line-height:1.6;margin-top:4px}
+
+/* ── CLIENTS STRIP ── */
+.clients-strip{background:var(--s1);border-top:1px solid var(--bd);border-bottom:1px solid var(--bd);padding:15px 5%;display:flex;align-items:center;justify-content:center;gap:0;flex-wrap:wrap;margin-top:28px}
+.ci{display:inline-flex;align-items:center;gap:8px;padding:6px 22px;font-size:12px;font-weight:700;color:rgba(255,255,255,.45);border-right:1px solid var(--bd);white-space:nowrap}
+.ci:last-child{border-right:none}
+.cdot{width:4px;height:4px;border-radius:50%;background:linear-gradient(135deg,#4A7FE8,#D040A0);flex-shrink:0}
+
+/* ── VID PLACEHOLDER ── */
+.vid-ph{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;background:var(--s2);border-radius:20px;border:2px dashed rgba(139,79,212,.28);text-align:center;padding:36px 24px}
+.play-btn{width:68px;height:68px;border-radius:50%;background:var(--grad);display:flex;align-items:center;justify-content:center;font-size:24px;box-shadow:0 8px 32px rgba(139,79,212,.45);margin-bottom:4px}
+.vid-lbl{font-size:13px;font-weight:700;color:rgba(139,79,212,.85)}
+.vid-hint{font-size:11px;color:var(--mu);max-width:520px;line-height:1.6;margin-top:4px}
+
+/* ── SECTIONS ── */
+.sec{padding:72px 5%}
+.sa{background:var(--s2)}
+.si{max-width:1100px;margin:0 auto}
+.stag{font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;background:var(--gtext);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;display:block;margin-bottom:10px}
+.st{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(26px,3.5vw,42px);letter-spacing:-.04em;color:#fff;line-height:1.07;margin-bottom:14px}
+.sb{font-size:15.5px;color:var(--mu);line-height:1.72}
+.sb strong{color:rgba(255,255,255,.78);font-weight:600}
+
+/* ── PROBLÈME ── */
+.prob-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin-top:40px}
+.pc{background:var(--s3);border:1px solid var(--bd);border-radius:var(--r);padding:26px 22px;transition:transform .25s,border-color .25s;position:relative;overflow:hidden}
+.pc::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--grad);opacity:.5}
+.pc:hover{transform:translateY(-4px);border-color:rgba(208,64,160,.35)}
+.pc-emoji{font-size:28px;margin-bottom:14px;display:block}
+.pc h3{font-family:'Syne',sans-serif;font-weight:700;font-size:16px;letter-spacing:-.02em;color:#fff;margin-bottom:8px}
+.pc p{font-size:13.5px;color:var(--mu);line-height:1.65}
+
+/* ── MARKET ── */
+.market-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:40px}
+.mcard{background:var(--s3);border:1px solid var(--bd);border-radius:var(--r);padding:22px 18px;position:relative;overflow:hidden;transition:transform .25s,border-color .25s}
+.mcard:hover{transform:translateY(-4px);border-color:rgba(139,79,212,.35)}
+.mcard::after{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--grad);opacity:.6}
+.mn{font-family:'Syne',sans-serif;font-weight:800;font-size:34px;letter-spacing:-.05em;background:var(--gtext);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1;margin-bottom:8px}
+.ml{font-size:13px;font-weight:600;color:#fff;margin-bottom:4px}
+.ms{font-size:11.5px;color:var(--mu);line-height:1.5}
+
+/* ── CASE STUDY ── */
+.case-wrap{background:var(--s1);border-radius:20px;border:1px solid var(--bd);overflow:hidden;margin-top:44px;position:relative}
+.case-wrap::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--grad)}
+.case-in{display:grid;grid-template-columns:1fr 1fr}
+.case-left{padding:36px;border-right:1px solid var(--bd)}
+.case-right{padding:36px;display:flex;flex-direction:column;gap:14px}
+.cbadge{display:inline-flex;align-items:center;gap:8px;background:rgba(74,127,232,.1);border:1px solid rgba(74,127,232,.22);border-radius:6px;padding:4px 12px;font-size:10px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:#6AA3FF;margin-bottom:14px}
+.ctitle{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(20px,2.5vw,30px);letter-spacing:-.04em;color:#fff;line-height:1.07;margin-bottom:14px}
+.cbody{font-size:14px;color:var(--mu);line-height:1.72;margin-bottom:20px}
+.cbody strong{color:rgba(255,255,255,.78);font-weight:600}
+.salons{display:flex;flex-direction:column;gap:8px}
+.salon{display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.03);border:1px solid var(--bd);border-radius:10px;padding:10px 14px}
+.sf{font-size:20px}
+.sname{font-size:13px;font-weight:600;color:#fff}
+.sdesc{font-size:11px;color:var(--mu)}
+.bstat{background:rgba(255,255,255,.04);border:1px solid var(--bd);border-radius:12px;padding:18px 20px;position:relative;overflow:hidden;transition:transform .2s}
+.bstat::after{content:'';position:absolute;top:0;left:0;bottom:0;width:2px;background:var(--grad)}
+.bstat:hover{transform:translateX(5px)}
+.bsn{font-family:'Syne',sans-serif;font-weight:800;font-size:36px;letter-spacing:-.06em;background:var(--gtext);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1;margin-bottom:4px}
+.bsl{font-size:13px;font-weight:600;color:#fff;margin-bottom:2px}
+.bss{font-size:11.5px;color:var(--mu)}
+
+/* ── COMMENT ÇA MARCHE (section complète) ── */
+.steps4{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:44px;position:relative}
+.steps4::before{content:'';position:absolute;top:23px;left:calc(12.5% + 10px);right:calc(12.5% + 10px);height:2px;background:var(--grad);opacity:.25;z-index:0}
+.step4{text-align:center;padding:0 14px;position:relative;z-index:1}
+.s4n{width:46px;height:46px;border-radius:50%;background:var(--s2);border:2px solid var(--bd);display:flex;align-items:center;justify-content:center;margin:0 auto 14px;font-family:'Syne',sans-serif;font-weight:800;font-size:14px;color:var(--mu);transition:all .25s}
+.step4:hover .s4n{background:var(--grad);border-color:transparent;color:#fff;transform:scale(1.1)}
+.step4 h3{font-family:'Syne',sans-serif;font-weight:700;font-size:14px;letter-spacing:-.01em;color:#fff;margin-bottom:7px}
+.step4 p{font-size:12.5px;color:var(--mu);line-height:1.6}
+
+/* ── LIVRABLES avec images Unsplash ── */
+.del6{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:42px}
+.dc{background:var(--s2);border:1px solid var(--bd);border-radius:var(--r);overflow:hidden;transition:all .25s}
+.dc:hover{border-color:rgba(139,79,212,.33);transform:translateY(-3px);box-shadow:0 12px 40px rgba(139,79,212,.1)}
+.dc-img{height:130px;overflow:hidden;position:relative}
+.dc-img img{width:100%;height:100%;object-fit:cover;transition:transform .4s;filter:brightness(.7) saturate(1.1)}
+.dc:hover .dc-img img{transform:scale(1.06);filter:brightness(.85) saturate(1.2)}
+.dc-img-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,transparent 40%,rgba(19,19,32,.95) 100%)}
+.dc-body{padding:16px 18px 20px}
+.dc-num{font-family:'Syne',sans-serif;font-weight:800;font-size:10px;letter-spacing:.15em;background:var(--gtext);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;display:block;margin-bottom:6px}
+.dc h3{font-family:'Syne',sans-serif;font-weight:700;font-size:14.5px;letter-spacing:-.02em;color:#fff;margin-bottom:6px}
+.dc p{font-size:12.5px;color:var(--mu);line-height:1.65}
+
+/* ── POUR QUI avec images ── */
+.sec4{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:40px}
+.scard{border-radius:var(--r);overflow:hidden;border:1px solid var(--bd);transition:all .25s}
+.scard:hover{border-color:rgba(139,79,212,.4);transform:translateY(-4px);box-shadow:0 12px 40px rgba(139,79,212,.15)}
+.sc-img{height:160px;overflow:hidden;position:relative}
+.sc-img img{width:100%;height:100%;object-fit:cover;transition:transform .4s;filter:brightness(.65) saturate(1.1)}
+.scard:hover .sc-img img{transform:scale(1.06);filter:brightness(.8)}
+.sc-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(8,8,15,.75) 0%,transparent 55%)}
+.sc-body{padding:14px 16px;background:var(--s2)}
+.scn{font-family:'Syne',sans-serif;font-weight:700;font-size:14px;color:#fff;margin-bottom:4px}
+.scd{font-size:11.5px;color:var(--mu);line-height:1.5}
+
+/* ── IMG PLACEHOLDER small ── */
+.img-ph-sm{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;background:var(--s3);border-radius:12px;border:2px dashed rgba(139,79,212,.28);color:rgba(139,79,212,.55);font-size:12px;font-weight:600;text-align:center;padding:18px}
+.img-ph-sm .ico{font-size:28px}
+.img-ph-sm .theme{font-size:10.5px;color:var(--mu);max-width:260px;line-height:1.5;margin-top:2px}
+
+/* ── FAQ ── */
+.faq-wrap{display:flex;flex-direction:column;gap:9px;margin-top:40px;max-width:740px}
+.faq{background:var(--s2);border:1px solid var(--bd);border-radius:var(--r);overflow:hidden}
+.faqq{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:17px 22px;cursor:pointer;font-size:15px;font-weight:600;color:#fff;user-select:none}
+.faqi{width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,.05);border:1px solid var(--bd);display:flex;align-items:center;justify-content:center;font-size:18px;color:var(--mu);flex-shrink:0;transition:all .2s}
+.faq.open .faqi{background:var(--grad);border-color:transparent;color:#fff;transform:rotate(45deg)}
+.faqa{display:none;padding:0 22px 17px;font-size:14px;color:rgba(255,255,255,.55);line-height:1.75}
+.faq.open .faqa{display:block}
+.faqa p{font-size:14px;color:rgba(255,255,255,.55);line-height:1.75}
+.faqa strong{color:rgba(255,255,255,.8);font-weight:600}
+
+/* ── CTA ── */
+.cta-sec{background:var(--s1);text-align:center;padding:88px 5%;position:relative;overflow:hidden}
+.cta-sec::before{content:'';position:absolute;width:900px;height:600px;border-radius:50%;background:radial-gradient(ellipse,rgba(139,79,212,.17) 0%,transparent 65%);top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none}
+.cta-in{position:relative;z-index:1;max-width:620px;margin:0 auto}
+.ctatitle{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(28px,4.5vw,52px);letter-spacing:-.045em;line-height:1.0;color:#fff;margin-bottom:16px}
+.ctasub{font-size:16px;color:var(--mu);line-height:1.65;margin-bottom:36px}
+.ctabtns{display:flex;gap:13px;justify-content:center;flex-wrap:wrap;margin-bottom:20px}
+.bwa{display:inline-flex;align-items:center;gap:10px;background:#25D366;color:#fff;padding:17px 36px;border-radius:12px;font-size:16px;font-weight:700;letter-spacing:-.02em;transition:all .2s;box-shadow:0 6px 32px rgba(37,211,102,.3)}
+.bwa:hover{background:#1EBD5A;transform:translateY(-2px);box-shadow:0 10px 44px rgba(37,211,102,.4)}
+.bmail{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--bd2);color:rgba(255,255,255,.65);padding:17px 28px;border-radius:12px;font-size:15px;font-weight:500;transition:all .2s}
+.bmail:hover{border-color:rgba(255,255,255,.3);color:#fff;background:rgba(255,255,255,.04)}
+.ctatrust{font-size:12px;color:rgba(255,255,255,.28)}
+
+/* ── FOOTER ── */
+.footer{background:#05050C;padding:22px 5%;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;border-top:1px solid var(--bd)}
+.fl{display:flex;align-items:center;gap:10px;font-family:'Syne',sans-serif;font-weight:800;font-size:16px;letter-spacing:-.03em;color:#fff}
+.fl img{width:28px;height:28px;border-radius:6px;object-fit:contain;background:#fff;padding:2px}
+.flinks{display:flex;gap:18px;flex-wrap:wrap}
+.flinks a{font-size:12px;color:var(--mu);transition:color .2s}
+.flinks a:hover{color:#fff}
+.fc{font-size:11px;color:rgba(255,255,255,.2)}
+
+/* ── RESPONSIVE ── */
+@media(max-width:960px){
+  .hero-top{grid-template-columns:1fr;gap:40px}
+  .hook-bar-in{grid-template-columns:1fr 1fr}
+  .prob-grid{grid-template-columns:1fr}
+  .market-grid{grid-template-columns:1fr 1fr}
+  .case-in{grid-template-columns:1fr}
+  .case-left{border-right:none;border-bottom:1px solid var(--bd)}
+  .steps4{grid-template-columns:1fr 1fr;gap:24px}
+  .steps4::before{display:none}
+  .del6{grid-template-columns:1fr 1fr}
+  .sec4{grid-template-columns:1fr 1fr}
+}
+@media(max-width:600px){
+  .hero-top{padding:52px 5% 36px}
+  .sec{padding:52px 5%}
+  .hbtns,.ctabtns{flex-direction:column;align-items:flex-start}
+  .ctabtns{align-items:center}
+  .hook-bar-in{grid-template-columns:1fr}
+  .del6,.sec4{grid-template-columns:1fr}
+  .clients-strip{gap:0}
+  .ci{padding:5px 12px;font-size:11px}
+  .footer{flex-direction:column;text-align:center}
+}
+@keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+.htag{animation:fadeUp .5s ease both}
+h1{animation:fadeUp .5s ease .08s both}
+.hsub{animation:fadeUp .5s ease .16s both}
+.hbtns{animation:fadeUp .5s ease .22s both}
+.sp{animation:fadeUp .5s ease .30s both}
+</style>
+<script>
+window.addEventListener('DOMContentLoaded',function(){
+  [].forEach.call(document.querySelectorAll('.faq'),function(f){
+    f.querySelector('.faqq').addEventListener('click',function(){
+      f.classList.toggle('open');
+    });
+  });
+});
+</script>
+</head>
+<body>
+
+<!-- ══ NAV ══ -->
+<nav class="nav">
+  <div class="nl">
+    <img src="articode_logo.jpg" alt="Articode AR">
+    ARTICODE
+  </div>
+  <a href="https://wa.me/212628958487?text=Bonjour%20Articode%2C%20démo%20AR%20packaging%20svp" class="nc" target="_blank">Démo gratuite</a>
+</nav>
+
+<!-- ══ HERO ══ -->
+<section class="hero">
+  <div class="orb1"></div><div class="orb2"></div>
+  <div class="hero-top">
+    <div>
+      <div class="htag">AR sur packaging · Réalité Augmentée Maroc</div>
+      <h1>Votre packaging<br>peut vendre<br><span class="g">tout seul.</span></h1>
+      <p class="hsub">Votre client pointe son téléphone sur votre produit.<br>Il voit une animation, entend une musique, télécharge un contenu.<br><strong>Pas d'application. Pas de QR code. Juste un scan — et votre marque prend vie.</strong></p>
+      <div class="hbtns">
+        <a href="https://wa.me/212628958487?text=Bonjour%20Articode%2C%20démo%20AR%20packaging%20svp" class="bm" target="_blank">Demander une démo</a>
+        <a href="/cdn-cgi/l/email-protection#83e4f1ecf6f3e6f7eae9e2f1e2c3e4eee2eaefade0eceebcf0f6e1e9e6e0f7bec2d1a8d3e2e0e8e2e4eaede4a8c2f1f7eae0ece7e6" class="bs">Nous écrire</a>
+      </div>
+    </div>
+    <div class="sp">
+      <div style="margin-bottom:6px">
+        <div style="font-family:'Syne',sans-serif;font-weight:800;font-size:15px;letter-spacing:-.03em;color:#fff;line-height:1.2">De votre brief à 1 million de scans.<br><span class="g">En 3 semaines.</span></div>
+      </div>
+      <div class="sr"><div class="snum">1,6M</div><div><div class="slbl">Produits vendus</div><div class="ssub">Zalar Farms / Blue Bloom · AR packaging</div></div></div>
+      <div class="sr"><div class="snum">340K</div><div><div class="slbl">Scans AR</div><div class="ssub">Sur un seul produit · zéro budget pub</div></div></div>
+      <div class="sr"><div class="snum">570+</div><div><div class="slbl">Entreprises accompagnées</div><div class="ssub">Maroc · Europe · Amérique Latine</div></div></div>
+      <div class="sr"><div class="snum">3</div><div><div class="slbl">Continents déployés</div><div class="ssub">Afrique · Europe · États-Unis</div></div></div>
+    </div>
+  </div>
+
+  <!-- ══ IMAGE PRINCIPALE — après titre + stats, avant hook ══ -->
+  <div style="padding:32px 5% 0">
+    <!--
+      ✅ REMPLACEZ PAR : <img src="votre-image.jpg" alt="AR Articode packaging" style="width:100%;height:480px;object-fit:cover;border-radius:20px;display:block;border:1px solid rgba(255,255,255,.07)">
+    -->
+    <img src="hero-image.webp" alt="Expérience AR Articode sur packaging produit" style="width:100%;height:480px;object-fit:cover;border-radius:20px;display:block;border:1px solid rgba(255,255,255,.07)">
+  </div>
+
+  <!-- ══ HOOK RAPIDE ══ -->
+  <div class="hook-bar">
+    <div class="hook-bar-in">
+      <div class="hb-step">
+        <div>
+          <div class="hb-title">Votre packaging parle à votre client</div>
+          <div class="hb-desc">Au scan de votre produit, une expérience animée se déclenche directement sur son téléphone. Pas d'app, pas de QR code.</div>
+        </div>
+      </div>
+      <div class="hb-step">
+        <div>
+          <div class="hb-title">Vos ventes augmentent</div>
+          <div class="hb-desc">Un packaging qui engage convertit mieux. Zalar Farms : <strong>1,6 million de produits vendus</strong> grâce à l'AR.</div>
+        </div>
+      </div>
+      <div class="hb-step">
+        <div>
+          <div class="hb-title">Vos clients deviennent vos commerciaux</div>
+          <div class="hb-desc">Ils filment, partagent, recommandent. <strong>340 000 vues AR</strong> sur un seul produit. Sans budget publicitaire.</div>
+        </div>
+      </div>
+      <div class="hb-step">
+        <div>
+          <div class="hb-title">Livré en 2 à 3 semaines</div>
+          <div class="hb-desc">Animation, musique, contenu interactif — tout clé en main. Vous testez sur votre téléphone avant de signer.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ══ CLIENTS STRIP ══ -->
+<div class="clients-strip">
+  <div class="ci"><span class="cdot"></span>Zalar Farms / Blue Bloom</div>
+  <div class="ci"><span class="cdot"></span>Volkswagen Maroc</div>
+  <div class="ci"><span class="cdot"></span>Casino de La Mamounia</div>
+  <div class="ci"><span class="cdot"></span>GITEX</div>
+  <div class="ci"><span class="cdot"></span>Hôtels Barceló</div>
+  <div class="ci"><span class="cdot"></span>GIS</div>
+  <div class="ci"><span class="cdot"></span>Hilton Tanger</div>
+  <div class="ci"><span class="cdot"></span>Technopark Casablanca</div>
+  <div class="ci"><span class="cdot"></span>Green Village</div>
+</div>
+
+<!-- ══ PROBLÈME ══ -->
+<section class="sec">
+  <div class="si">
+    <span class="stag">Le problème</span>
+    <h2 class="st">Un bon produit mérite mieux<br><span class="g">qu'un packaging muet.</span></h2>
+    <p class="sb">Vos concurrents baissent leurs prix. Vos clients passent en rayon sans s'arrêter. Votre packaging ne fait rien — il n'informe pas, n'engage pas, ne crée aucun lien avec l'acheteur.</p>
+
+    <!-- IMAGE BANDE — section problème -->
+    <div style="margin:28px 0">
+      <!--
+        ✅ REMPLACEZ PAR : <img src="probleme.jpg" alt="Packaging ordinaire sans AR" style="width:100%;height:200px;object-fit:cover;border-radius:14px;display:block;border:1px solid rgba(255,255,255,.07)">
+      -->
+      <img src="bande-probleme.webp" alt="Rayons supermarché packaging ordinaire sans AR" style="width:100%;height:200px;object-fit:cover;border-radius:14px;display:block">
+    </div>
+    <div class="prob-grid">
+      <div class="pc">
+        <h3>Le packaging se tait</h3>
+        <p>Une étiquette, un code-barres, un logo. Votre produit ne dit rien une fois dans les mains du client. L'expérience s'arrête à l'achat.</p>
+      </div>
+      <div class="pc">
+        <h3>Pas de fidélisation</h3>
+        <p>Sans lien après l'achat, le client n'a aucune raison de revenir vers votre marque. Vous perdez 80% de la valeur client potentielle.</p>
+      </div>
+      <div class="pc">
+        <h3>Zéro viralité naturelle</h3>
+        <p>Un produit ordinaire ne se partage pas. Vos clients ne filment pas un emballage banal. Vous n'existez pas sur les réseaux de vos propres acheteurs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ VIDÉO 1 ══ -->
+<section class="sec sa">
+  <div class="si">
+    <span class="stag">Voir pour croire</span>
+    <h2 class="st">L'AR, ça se montre.<br><span class="g">Ça ne se décrit pas !</span></h2>
+    <p class="sb" style="margin-bottom:28px">Regardez l'expérience en action — ou demandez une démo live sur votre propre produit.</p>
+    <!--
+      ✅ POUR ACTIVER — YouTube : <iframe src="https://www.youtube.com/embed/VOTRE_ID?autoplay=1&mute=1&loop=1" style="width:100%;aspect-ratio:16/9;border-radius:20px;border:0" allowfullscreen></iframe>
+      ✅ Google Drive : <iframe src="https://drive.google.com/file/d/VOTRE_ID/preview" style="width:100%;aspect-ratio:16/9;border-radius:20px;border:0" allowfullscreen></iframe>
+      ✅ Fichier MP4 : <video src="VOTRE_URL.mp4" autoplay muted loop playsinline style="width:100%;border-radius:20px;display:block"></video>
+    -->
+    <div style="display:flex;justify-content:center">
+      <div style="width:100%;max-width:380px;position:relative">
+        <!-- Cadre téléphone -->
+        <div style="background:#111;border-radius:36px;padding:14px;box-shadow:0 0 0 2px rgba(255,255,255,.1),0 24px 64px rgba(0,0,0,.6)">
+          <!-- Encoche -->
+          <div style="width:80px;height:10px;background:#1a1a1a;border-radius:6px;margin:0 auto 10px"></div>
+          <!-- Zone vidéo portrait -->
+          <div style="border-radius:24px;overflow:hidden;aspect-ratio:9/16;background:#000;position:relative">
+            <!--
+              ✅ REMPLACEZ CE BLOC PAR :
+              Fichier MP4 : <video src="votre-video.mp4" autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;display:block"></video>
+              Google Drive : <iframe src="https://drive.google.com/file/d/VOTRE_ID/preview" style="width:100%;height:100%;border:0" allowfullscreen></iframe>
+              YouTube : <iframe src="https://www.youtube.com/embed/VOTRE_ID" style="width:100%;height:100%;border:0" allowfullscreen></iframe>
+            -->
+            <iframe src="https://www.youtube-nocookie.com/embed/Rfwbwp29ctc?rel=0&playsinline=1" style="width:100%;height:100%;border:0" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <!-- Bouton home -->
+          <div style="width:40px;height:5px;background:#1a1a1a;border-radius:4px;margin:10px auto 0"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ MARKET NUMBERS ══ -->
+<section class="sec">
+  <div class="si">
+    <span class="stag">Le marché</span>
+    <h2 class="st">Le packaging interactif explose.<br><span class="g">Vos concurrents le savent déjà.</span></h2>
+    <div class="market-grid">
+      <div class="mcard"><div class="mn">$14Md</div><div class="ml">Marché AR mondial 2024</div><div class="ms">Croissance +35%/an. Les marques qui adoptent l'AR maintenant prennent 3 à 5 ans d'avance.</div></div>
+      <div class="mcard"><div class="mn">94%</div><div class="ml">Taux de mémorisation</div><div class="ms">Une expérience AR est mémorisée à 94% contre 10% pour un packaging classique. (Retail Perceptions)</div></div>
+      <div class="mcard"><div class="mn">×3,5</div><div class="ml">Engagement client</div><div class="ms">Les produits avec AR génèrent 3,5× plus d'engagement et de partages sociaux. (Deloitte 2023)</div></div>
+      <div class="mcard"><div class="mn">72%</div><div class="ml">Acheteurs influencés par l'AR</div><div class="ms">72% des consommateurs affirment que l'AR influence leur décision d'achat. (Snap / Nielsen 2023)</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CASE STUDY ZALAR ══ -->
+<section class="sec sa">
+  <div class="si">
+    <span class="stag">Référence client</span>
+    <h2 class="st"><span class="g">1,6 million de produits vendus.</span><br>C'est ce que l'AR fait en vrai.</h2>
+    <div class="case-wrap">
+      <div class="case-in">
+        <div class="case-left">
+          <div class="cbadge">📦 Zalar Farms / Blue Bloom — Myrtilles Premium</div>
+          <h3 class="ctitle">Un panda qui danse.<br>1 600 000 ventes.</h3>
+
+          <!-- IMAGE CASE STUDY — sous le titre -->
+          <div style="margin-bottom:18px">
+            <!--
+              ✅ REMPLACEZ PAR : <img src="blue-bloom.jpg" alt="Packaging Blue Bloom AR" style="width:100%;height:220px;object-fit:cover;border-radius:12px;display:block">
+            -->
+            <div class="img-ph" style="height:220px;border-radius:12px">
+              <span class="ip-ico">📸</span>
+              <span class="ip-title">PHOTO PACKAGING BLUE BLOOM</span>
+              <span class="ip-theme">📌 Packaging myrtilles + smartphone montrant l'animation panda AR. OU photo du stand au salon Madrid / Cologne. Format : 600×220px.</span>
+            </div>
+          </div>Articode redesigne le packaging complet. Au scan : <strong>panda AR animé</strong> qui danse sur une <strong>chanson originale composée par Articode</strong>. Un ebook de recettes myrtilles se télécharge en un clic.<br><br>Résultat : <strong>340 000 vues AR</strong>. <strong>1,6 million de ventes</strong>. Déployé dans 3 salons internationaux.</p>
+          <div class="salons">
+            <div class="salon"><span class="sf"></span><div><div class="sname">Fruit Attraction — Madrid</div><div class="sdesc">Plus grand salon mondial fruits & légumes</div></div></div>
+            <div class="salon"><span class="sf"></span><div><div class="sname">Anuga — Cologne</div><div class="sdesc">Plus grande foire alimentaire mondiale</div></div></div>
+            <div class="salon"><span class="sf"></span><div><div class="sname">Hortitec — São Paulo</div><div class="sdesc">Plus grand salon horticole d'Amérique Latine</div></div></div>
+          </div>
+        </div>
+        <div class="case-right">
+          <div class="bstat"><div class="bsn">1,6M</div><div class="bsl">Produits vendus</div><div class="bss">Attribués directement à l'expérience AR</div></div>
+          <div class="bstat"><div class="bsn">340K</div><div class="bsl">Scans AR</div><div class="bss">Sur un seul SKU · zéro budget publicitaire</div></div>
+          <div class="bstat"><div class="bsn">3</div><div class="bsl">Salons internationaux</div><div class="bss">Madrid · Cologne · São Paulo</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ VIDÉO 2 ══ -->
+<section class="sec">
+  <div class="si">
+    <span class="stag">En action</span>
+    <h2 class="st">Volkswagen. Mamounia. Hilton.<br><span class="g">L'AR partout où ça compte.</span></h2>
+    <p class="sb" style="margin-bottom:28px">Avatars AR d'accueil déployés sur les plus grands événements et établissements du Maroc.</p>
+    <!--
+      ✅ MÊME STRUCTURE QUE VIDÉO 1 — collez votre iframe ou <video> ici
+    -->
+    <div style="display:flex;justify-content:center">
+      <div style="width:100%;max-width:380px;position:relative">
+        <div style="background:#111;border-radius:36px;padding:14px;box-shadow:0 0 0 2px rgba(255,255,255,.1),0 24px 64px rgba(0,0,0,.6)">
+          <div style="width:80px;height:10px;background:#1a1a1a;border-radius:6px;margin:0 auto 10px"></div>
+          <div style="border-radius:24px;overflow:hidden;aspect-ratio:9/16;background:#000">
+            <iframe src="https://www.youtube-nocookie.com/embed/yLYuf5C-tLQ?rel=0&playsinline=1" style="width:100%;height:100%;border:0" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div style="width:40px;height:5px;background:#1a1a1a;border-radius:4px;margin:10px auto 0"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ LIVRABLES avec images Unsplash libres de droit ══ -->
+<section class="sec sa">
+  <div class="si">
+    <span class="stag">Ce que vous obtenez</span>
+    <h2 class="st">Tout inclus.<br><span class="g">Rien à sous-traiter.</span></h2>
+    <div class="del6">
+
+      <div class="dc">
+        <div class="dc-img">
+          <img src="ar-animation.webp" alt="Animation AR sur mesure Articode personnage 3D">
+          <div class="dc-img-overlay"></div>
+        </div>
+        <div class="dc-body">
+          <span class="dc-num">01</span>
+          <h3>Animation AR sur mesure</h3>
+          <p>Personnage 3D, animal ou scène animée créée pour votre marque. Mémorable, non reproductible, propriété exclusive.</p>
+        </div>
+      </div>
+
+      <div class="dc">
+        <div class="dc-img">
+          <img src="musique-studio.webp" alt="Studio musique originale Articode">
+          <div class="dc-img-overlay"></div>
+        </div>
+        <div class="dc-body">
+          <span class="dc-num">02</span>
+          <h3>Musique ou voix originale</h3>
+          <p>Chanson composée ou voix enregistrée pour l'expérience. Comme la chanson panda Zalar Farms — mémorisée, partagée, virale.</p>
+        </div>
+      </div>
+
+      <div class="dc">
+        <div class="dc-img">
+          <img src="contenu-interactif.webp" alt="Contenu interactif AR Articode ebook catalogue">
+          <div class="dc-img-overlay"></div>
+        </div>
+        <div class="dc-body">
+          <span class="dc-num">03</span>
+          <h3>Contenu interactif</h3>
+          <p>Ebook, catalogue, bon de réduction, vidéo de marque. Tout ce qui transforme un scan en action concrète.</p>
+        </div>
+      </div>
+
+      <div class="dc">
+        <div class="dc-img">
+          <img src="zero-application.webp" alt="Pas besoin d'application AR Articode">
+          <div class="dc-img-overlay"></div>
+        </div>
+        <div class="dc-body">
+          <span class="dc-num">04</span>
+          <h3>Zéro application</h3>
+          <p>Fonctionne depuis l'appareil photo natif iOS & Android. Aucun téléchargement. Taux de scan maximal.</p>
+        </div>
+      </div>
+
+      <div class="dc">
+        <div class="dc-img">
+          <img src="dashboard.webp" alt="Dashboard analytics temps réel Articode">
+          <div class="dc-img-overlay"></div>
+        </div>
+        <div class="dc-body">
+          <span class="dc-num">05</span>
+          <h3>Dashboard temps réel</h3>
+          <p>Scans, localisation, durée d'engagement. Vous mesurez le ROI exact de chaque déploiement.</p>
+        </div>
+      </div>
+
+      <div class="dc">
+        <div class="dc-img">
+          <img src="support-fondateur.webp" alt="Support direct Articode fondateur équipe tech">
+          <div class="dc-img-overlay"></div>
+        </div>
+        <div class="dc-body">
+          <span class="dc-num">06</span>
+          <h3>Support direct fondateur</h3>
+          <p>Articode suit votre projet personnellement. Livraison garantie en 2-3 semaines. Démo avant production.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ COMMENT ÇA MARCHE — section complète à sa place ══ -->
+<section class="sec">
+  <div class="si">
+    <span class="stag">Comment ça marche</span>
+    <h2 class="st">De votre brief à 1 million de scans.<br><span class="g">En 3 semaines.</span></h2>
+    <p class="sb">Vous nous donnez votre produit et votre brief. Nous livrons une expérience complète, testée, déployée.</p>
+    <div class="steps4">
+      <div class="step4"><div class="s4n">01</div><h3>Brief en 30 min</h3><p>Vous décrivez votre produit, votre cible, vos objectifs. On propose le concept AR adapté à votre marque.</p></div>
+      <div class="step4"><div class="s4n">02</div><h3>Conception sur mesure</h3><p>Animation, musique, contenu interactif — tout est créé pour vous. Unique, non reproductible.</p></div>
+      <div class="step4"><div class="s4n">03</div><h3>Démo avant déploiement</h3><p>Vous scannez votre packaging avec votre téléphone. Vous validez avant toute mise en production.</p></div>
+      <div class="step4"><div class="s4n">04</div><h3>Live en 2-3 semaines</h3><p>L'expérience est déployée. Dashboard de suivi livré. Support continu assuré par Articode.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ POUR QUI ══ -->
+<section class="sec sa">
+  <div class="si">
+    <span class="stag">Pour qui</span>
+    <h2 class="st">Vous avez un produit physique.<br><span class="g">C'est tout ce qu'il faut.</span></h2>
+    <div class="sec4">
+
+      <div class="scard">
+        <div class="sc-img">
+          <img src="agro-rayon.webp" alt="Agroalimentaire packaging rayon Articode AR">
+          <div class="sc-overlay"></div>
+        </div>
+        <div class="sc-body">
+          <div class="scn">Agroalimentaire</div>
+          <div class="scd">Fruits, conserves, boissons, export · Réf. : Zalar Farms</div>
+        </div>
+      </div>
+
+      <div class="scard">
+        <div class="sc-img">
+          <img src="cosmetique.webp" alt="Cosmétique beauté packaging premium AR Articode">
+          <div class="sc-overlay"></div>
+        </div>
+        <div class="sc-body">
+          <div class="scn">Cosmétique & Beauté</div>
+          <div class="scd">Soins, parfums, marques premium, produits naturels</div>
+        </div>
+      </div>
+
+      <div class="scard">
+        <div class="sc-img">
+          <img src="hotellerie.webp" alt="Hôtellerie luxe lobby hotel AR Articode">
+          <div class="sc-overlay"></div>
+        </div>
+        <div class="sc-body">
+          <div class="scn">Hôtellerie & Luxe</div>
+          <div class="scd">Hôtels 4-5★ · Réf. : Hilton Tanger, Barceló, Mamounia</div>
+        </div>
+      </div>
+
+      <div class="scard">
+        <div class="sc-img">
+          <img src="evenementiel.webp" alt="Événementiel tech salon professionnel AR Articode">
+          <div class="sc-overlay"></div>
+        </div>
+        <div class="sc-body">
+          <div class="scn">Événementiel & Tech</div>
+          <div class="scd">Salons, conférences · Réf. : GITEX, SIAM, Volkswagen</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ FAQ ══ -->
+<section class="sec">
+  <div class="si">
+    <span class="stag">Questions fréquentes</span>
+    <h2 class="st">Tout ce que vous voulez<br>savoir avant d'appeler.</h2>
+    <div class="faq-wrap">
+      <div class="faq">
+        <div class="faqq">Mes clients vont vraiment scanner le packaging ?<div class="faqi">+</div></div>
+        <div class="faqa"><p><strong>340 000 scans sur un seul produit, sans budget pub.</strong> Les clients scannent quand l'expérience en vaut la peine. Vous voyez la démo sur votre propre téléphone avant de signer.</p></div>
+      </div>
+      <div class="faq">
+        <div class="faqq">Faut-il une application pour que ça marche ?<div class="faqi">+</div></div>
+        <div class="faqa"><p><strong>Zéro application.</strong> L'expérience se déclenche depuis l'appareil photo natif iOS et Android. Aucune friction pour votre client final.</p></div>
+      </div>
+      <div class="faq">
+        <div class="faqq">Combien de temps pour livrer ?<div class="faqi">+</div></div>
+        <div class="faqa"><p><strong>2 à 3 semaines</strong> de la validation du brief à la mise en ligne. Vous testez sur votre téléphone avant la production finale.</p></div>
+      </div>
+      <div class="faq">
+        <div class="faqq">Ça marche à l'export, hors Maroc ?<div class="faqi">+</div></div>
+        <div class="faqa"><p>Oui. <strong>Zalar Farms a déployé à Madrid, Cologne et São Paulo.</strong> Volkswagen à Casablanca, GITEX dans le Golfe. L'AR fonctionne partout dans le monde.</p></div>
+      </div>
+      <div class="faq">
+        <div class="faqq">Quel budget prévoir ?<div class="faqi">+</div></div>
+        <div class="faqa"><p>Chaque projet est sur mesure. <strong>Nos clients voient un ROI dès les premières semaines.</strong> Demandez une démo — on discute sans engagement.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CTA ══ CTA ══ -->
+<section class="cta-sec">
+  <div class="cta-in">
+    <span class="stag" style="-webkit-text-fill-color:unset;background:none;color:rgba(255,255,255,.35)">On vous attend</span>
+    <h2 class="ctatitle">Votre prochain produit<br>peut faire <span class="g">1,6 million.</span></h2>
+    <p class="ctasub">Démo live en 5 minutes sur WhatsApp. Vous scannez. Vous voyez. Vous décidez. Aucun engagement avant.</p>
+    <div class="ctabtns">
+      <a href="https://wa.me/212628958487?text=Bonjour%20Articode%2C%20je%20voudrais%20une%20démo%20AR%20packaging%20pour%20mon%20produit" class="bwa" target="_blank">Démo gratuite sur WhatsApp</a>
+      <a href="/cdn-cgi/l/email-protection#f295809d878297869b98938093b2959f939b9edc919d9fcd81879098979186cfb6979f939c9697d996315b9f9dd9b3a0d9a293919993959b9c95" class="bmail">Envoyer un email</a>
+    </div>
+    <div class="ctatrust">+212 628 958 487 · <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="26415449535643524f4c47544766414b474f4a0845494b">[email&#160;protected]</a> · articode.ma · Casablanca, Maroc</div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="fl"><img src="articode_logo.jpg" alt="Articode">ARTICODE</div>
+  <div class="flinks">
+    <a href="/cdn-cgi/l/email-protection#1077627f65607564797a71627150777d71797c3e737f7d"><span class="__cf_email__" data-cf
+
