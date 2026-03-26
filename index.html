@@ -253,13 +253,15 @@ window.addEventListener('DOMContentLoaded',function(){
   });
 });
 </script>
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="shortcut icon" href="favicon.ico">
 </head>
 <body>
 
 <!-- ══ NAV ══ -->
 <nav class="nav">
   <div class="nl">
-    <img src="articode_logo.jpg" alt="Articode AR">
+    <img src="articode_logo.png" alt="Articode AR">
     ARTICODE
   </div>
   <a href="https://wa.me/212628958487?text=Bonjour%20Articode%2C%20démo%20AR%20packaging%20svp" class="nc" target="_blank">Démo gratuite</a>
@@ -438,11 +440,7 @@ window.addEventListener('DOMContentLoaded',function(){
             <!--
               ✅ REMPLACEZ PAR : <img src="blue-bloom.jpg" alt="Packaging Blue Bloom AR" style="width:100%;height:220px;object-fit:cover;border-radius:12px;display:block">
             -->
-            <div class="img-ph" style="height:220px;border-radius:12px">
-              <span class="ip-ico">📸</span>
-              <span class="ip-title">PHOTO PACKAGING BLUE BLOOM</span>
-              <span class="ip-theme">📌 Packaging myrtilles + smartphone montrant l'animation panda AR. OU photo du stand au salon Madrid / Cologne. Format : 600×220px.</span>
-            </div>
+            <img src="blue-bloom.webp" alt="Packaging Blue Bloom AR panda Zalar Farms" style="width:100%;height:220px;object-fit:cover;border-radius:12px;display:block">
           </div>Articode redesigne le packaging complet. Au scan : <strong>panda AR animé</strong> qui danse sur une <strong>chanson originale composée par Articode</strong>. Un ebook de recettes myrtilles se télécharge en un clic.<br><br>Résultat : <strong>340 000 vues AR</strong>. <strong>1,6 million de ventes</strong>. Déployé dans 3 salons internationaux.</p>
           <div class="salons">
             <div class="salon"><span class="sf"></span><div><div class="sname">Fruit Attraction — Madrid</div><div class="sdesc">Plus grand salon mondial fruits & légumes</div></div></div>
@@ -454,6 +452,18 @@ window.addEventListener('DOMContentLoaded',function(){
           <div class="bstat"><div class="bsn">1,6M</div><div class="bsl">Produits vendus</div><div class="bss">Attribués directement à l'expérience AR</div></div>
           <div class="bstat"><div class="bsn">340K</div><div class="bsl">Scans AR</div><div class="bss">Sur un seul SKU · zéro budget publicitaire</div></div>
           <div class="bstat"><div class="bsn">3</div><div class="bsl">Salons internationaux</div><div class="bss">Madrid · Cologne · São Paulo</div></div>
+          <!-- TÉMOIGNAGE IMANE -->
+          <div style="background:rgba(255,255,255,.03);border:1px solid rgba(139,79,212,.25);border-radius:12px;padding:18px 20px;position:relative;overflow:hidden">
+            <div style="position:absolute;top:0;left:0;bottom:0;width:2px;background:var(--grad)"></div>
+            <p style="font-size:12.5px;color:rgba(255,255,255,.65);line-height:1.75;font-style:italic;margin-bottom:14px">&quot;Depuis notre collaboration avec Articode, la réalité augmentée fait partie intégrante de notre stratégie. AR sur tous nos stands, cartes de visite, produits et brochures. Aujourd'hui Articode équipe l'une de nos fermes pour des visites en AR pour nos acheteurs et grossistes.&quot;</p>
+            <div style="display:flex;align-items:center;gap:10px">
+              <img src="imane-zalar.png" alt="Imane Rincon Sanchez" style="width:36px;height:36px;border-radius:50%;object-fit:cover;border:1.5px solid rgba(139,79,212,.4)">
+              <div>
+                <div style="font-size:12px;font-weight:700;color:#fff">Imane Rincon Sanchez</div>
+                <div style="font-size:10.5px;color:var(--mu)">Director of Sales &amp; Business Development — Zalar Farms</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -682,7 +692,27 @@ window.addEventListener('DOMContentLoaded',function(){
 
 <!-- FOOTER -->
 <footer class="footer">
-  <div class="fl"><img src="articode_logo.jpg" alt="Articode">ARTICODE</div>
+  <div class="fl"><img src="articode_logo.png" alt="Articode">ARTICODE</div>
   <div class="flinks">
     <a href="/cdn-cgi/l/email-protection#1077627f65607564797a71627150777d71797c3e737f7d"><span class="__cf_email__" data-cf
-
+<!-- BOUTON WHATSAPP FLOTTANT -->
+<a href="https://wa.me/212628958487?text=Bonjour%20Articode%2C%20je%20voudrais%20une%20démo%20AR%20packaging" target="_blank" style="
+  position:fixed;
+  bottom:24px;
+  right:24px;
+  z-index:9999;
+  width:58px;
+  height:58px;
+  border-radius:50%;
+  background:#25D366;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 4px 24px rgba(37,211,102,.5);
+  transition:transform .2s,box-shadow .2s;
+  text-decoration:none;
+" onmouseover="this.style.transform='scale(1.1)';this.style.boxShadow='0 8px 32px rgba(37,211,102,.6)'" onmouseout="this.style.transform='scale(1)';this.style.boxShadow='0 4px 24px rgba(37,211,102,.5)'">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
