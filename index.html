@@ -774,7 +774,7 @@ window.addEventListener('DOMContentLoaded',function(){
     <p style="font-size:15px;color:var(--mu);margin-top:12px;margin-bottom:40px">Pas de commercial agressif. Juste une conversation sur ce qu'on peut faire pour votre marque.</p>
 
     <form id="contact-form" style="display:flex;flex-direction:column;gap:16px;max-width:640px;margin:0 auto"
-      action="https://script.google.com/macros/s/AKfycbzUS3qBqimH1PEifDmp5s1_5xCkT09uswk8bGB4lHJ4K8yvMA--WDcsLPATZ1j09V53/exec" method="POST">
+      action="https://script.google.com/macros/s/AKfycbzWCqXa7Eg4jvBzg3jONpMPsNZo62qtWTvT0tGRPPtN5WdphM5d0MfXYvbbGh8XBEmb/exec" method="POST">
 
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
         <div>
@@ -835,33 +835,28 @@ window.addEventListener('DOMContentLoaded',function(){
     </form>
 
     <script>
-    document.getElementById('contact-form').addEventListener('submit', async function(e) {
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
       e.preventDefault();
       const form = e.target;
       const btn = form.querySelector('button[type="submit"]');
       btn.textContent = 'Envoi en cours...';
       btn.disabled = true;
-      try {
-        const formData = new FormData(form);
-        const data = {};
-        formData.forEach((v,k) => data[k]=v);
-        const res = await fetch(form.action, {
-          method: 'POST',
-          body: JSON.stringify(data),
-          headers: { 'Content-Type': 'application/json' }
-        });
-        if (res.ok || res.type === 'opaque') {
-          form.reset();
-          document.getElementById('form-success').style.display = 'block';
-          btn.style.display = 'none';
-        } else {
-          btn.textContent = 'Erreur — réessayez';
-          btn.disabled = false;
-        }
-      } catch {
+      const formData = new FormData(form);
+      const data = {};
+      formData.forEach((v,k) => data[k]=v);
+      fetch(form.action, {
+        method: 'POST',
+        mode: 'no-cors',
+        body: JSON.stringify(data),
+        headers: { 'Content-Type': 'application/json' }
+      }).then(function() {
+        form.reset();
+        document.getElementById('form-success').style.display = 'block';
+        btn.style.display = 'none';
+      }).catch(function() {
         btn.textContent = 'Erreur — réessayez';
         btn.disabled = false;
-      }
+      });
     });
     </script>
   </div>
