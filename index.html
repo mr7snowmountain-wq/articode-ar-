@@ -86,7 +86,7 @@ h1{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(34px,5vw,60px);
 .ip-theme{font-size:11px;color:var(--mu);max-width:540px;line-height:1.6;margin-top:4px}
 
 /* ── CLIENTS STRIP ── */
-.clients-strip{background:var(--s1);border-top:1px solid var(--bd);border-bottom:1px solid var(--bd);padding:12px 5%;display:flex;align-items:center;justify-content:center;gap:0;flex-wrap:nowrap;overflow-x:auto;margin-top:28px;-webkit-overflow-scrolling:touch}
+.clients-strip{background:var(--s1);border-top:1px solid var(--bd);border-bottom:1px solid var(--bd);padding:12px 0;display:flex;align-items:center;gap:0;flex-wrap:nowrap;overflow:hidden;margin-top:28px;width:100%}
 .ci{display:inline-flex;align-items:center;gap:8px;padding:6px 22px;font-size:12px;font-weight:700;color:rgba(255,255,255,.45);border-right:1px solid var(--bd);white-space:nowrap}
 .ci:last-child{border-right:none}
 .cdot{width:4px;height:4px;border-radius:50%;background:linear-gradient(135deg,#4A7FE8,#D040A0);flex-shrink:0}
@@ -251,6 +251,8 @@ h1{animation:fadeUp .5s ease .08s both}
 .hsub{animation:fadeUp .5s ease .16s both}
 .hbtns{animation:fadeUp .5s ease .22s both}
 .sp{animation:fadeUp .5s ease .30s both}
+@keyframes stripScroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+@keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 </style>
 <script>
 window.addEventListener('DOMContentLoaded',function(){
@@ -301,9 +303,19 @@ window.addEventListener('DOMContentLoaded',function(){
   </div>
 
   <!-- ══ IMAGE PRINCIPALE — après titre + stats, avant hook ══ -->
-  <div style="padding:32px 5% 0">
+  <div style="overflow:hidden;padding:10px 0;white-space:nowrap;background:var(--grad);margin-bottom:20px">
+  <div style="display:inline-block;animation:ticker 18s linear infinite">
+    <span style="color:#fff;font-size:13px;font-weight:700;padding:0 60px">Démo gratuite cette semaine &mdash; 5 places disponibles &nbsp;&nbsp;·&nbsp;&nbsp; WhatsApp : +212 628 958 487 &nbsp;&nbsp;·&nbsp;&nbsp; Démo gratuite cette semaine &mdash; 5 places disponibles &nbsp;&nbsp;·&nbsp;&nbsp; WhatsApp : +212 628 958 487 &nbsp;&nbsp;·&nbsp;&nbsp; Démo gratuite cette semaine &mdash; 5 places disponibles &nbsp;&nbsp;·&nbsp;&nbsp; WhatsApp : +212 628 958 487</span>
+  </div>
+</div>
+<div style="padding:0 5% 0">
     <!--
-      ✅ REMPLACEZ PAR : <div style="position:relative;width:100%;padding-bottom:56.25%;border-radius:20px;overflow:hidden;border:1px solid rgba(255,255,255,.07)">
+      ✅ REMPLACEZ PAR : <div style="overflow:hidden;padding:10px 0;white-space:nowrap;background:var(--grad);margin-bottom:20px">
+  <div style="display:inline-block;animation:ticker 18s linear infinite">
+    <span style="color:#fff;font-size:13px;font-weight:700;padding:0 60px">Démo gratuite cette semaine &mdash; 5 places disponibles &nbsp;&nbsp;·&nbsp;&nbsp; WhatsApp : +212 628 958 487 &nbsp;&nbsp;·&nbsp;&nbsp; Démo gratuite cette semaine &mdash; 5 places disponibles &nbsp;&nbsp;·&nbsp;&nbsp; WhatsApp : +212 628 958 487 &nbsp;&nbsp;·&nbsp;&nbsp; Démo gratuite cette semaine &mdash; 5 places disponibles &nbsp;&nbsp;·&nbsp;&nbsp; WhatsApp : +212 628 958 487</span>
+  </div>
+</div>
+<div style="position:relative;width:100%;padding-bottom:56.25%;border-radius:20px;overflow:hidden;border:1px solid rgba(255,255,255,.07)">
   <iframe src="https://www.youtube.com/embed/i6ERLSWI6Xo?autoplay=0&rel=0&modestbranding=1" 
     style="position:absolute;top:0;left:0;width:100%;height:100%;border:0" 
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -311,7 +323,7 @@ window.addEventListener('DOMContentLoaded',function(){
   </iframe>
 </div>
     -->
-    <div style="position:relative;width:100%;padding-bottom:56.25%;border-radius:20px;overflow:hidden;border:1px solid rgba(255,255,255,.07)">
+<div style="position:relative;width:100%;padding-bottom:56.25%;border-radius:20px;overflow:hidden;border:1px solid rgba(255,255,255,.07)">
   <iframe src="https://www.youtube.com/embed/i6ERLSWI6Xo?autoplay=0&rel=0&modestbranding=1" 
     style="position:absolute;top:0;left:0;width:100%;height:100%;border:0" 
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -354,15 +366,18 @@ window.addEventListener('DOMContentLoaded',function(){
 
 <!-- ══ CLIENTS STRIP ══ -->
 <div class="clients-strip">
-  <div class="ci"><span class="cdot"></span>Zalar Farms / Blue Bloom</div>
-  <div class="ci"><span class="cdot"></span>Volkswagen Maroc</div>
-  <div class="ci"><span class="cdot"></span>Casino de La Mamounia</div>
-  <div class="ci"><span class="cdot"></span>GITEX</div>
-  <div class="ci"><span class="cdot"></span>Hôtels Barceló</div>
-  <div class="ci"><span class="cdot"></span>GIS</div>
-  <div class="ci"><span class="cdot"></span>Hilton Tanger</div>
-  <div class="ci"><span class="cdot"></span>Technopark Casablanca</div>
-  <div class="ci"><span class="cdot"></span>Green Village</div>
+  <div style="display:inline-flex;animation:stripScroll 25s linear infinite;align-items:center">
+    <div class="ci"><span class="cdot"></span>Zalar Farms / Blue Bloom</div><div class="ci"><span class="cdot"></span>Volkswagen Maroc</div><div class="ci"><span class="cdot"></span>Casino de La Mamounia</div><div class="ci"><span class="cdot"></span>GITEX</div><div class="ci"><span class="cdot"></span>Hôtels Barceló</div><div class="ci"><span class="cdot"></span>GIS</div><div class="ci"><span class="cdot"></span>Hilton Tanger</div><div class="ci"><span class="cdot"></span>Technopark Casablanca</div><div class="ci"><span class="cdot"></span>Green Village</div><div class="ci"><span class="cdot"></span>Zalar Farms / Blue Bloom</div><div class="ci"><span class="cdot"></span>Volkswagen Maroc</div><div class="ci"><span class="cdot"></span>Casino de La Mamounia</div><div class="ci"><span class="cdot"></span>GITEX</div><div class="ci"><span class="cdot"></span>Hôtels Barceló</div><div class="ci"><span class="cdot"></span>GIS</div><div class="ci"><span class="cdot"></span>Hilton Tanger</div><div class="ci"><span class="cdot"></span>Technopark Casablanca</div><div class="ci"><span class="cdot"></span>Green Village</div>
+  </div>
+</div>
+
+
+
+
+<div style="text-align:center;padding:24px 0 48px 0">
+  <a href="#contact" style="display:inline-flex;align-items:center;gap:8px;background:var(--grad);color:#fff;padding:14px 28px;border-radius:12px;font-size:14px;font-weight:700;font-family:inherit;text-decoration:none">
+    Parlez-nous de votre projet &nbsp;→
+  </a>
 </div>
 
 <!-- ══ PROBLÈME ══ -->
@@ -395,7 +410,6 @@ window.addEventListener('DOMContentLoaded',function(){
     </div>
   </div>
 </section>
-
 <!-- ══ VIDÉO 1 ══ -->
 <section class="sec sa">
   <div class="si">
@@ -431,6 +445,15 @@ window.addEventListener('DOMContentLoaded',function(){
   </div>
 </section>
 
+
+
+
+<div style="text-align:center;padding:24px 0 48px 0">
+  <a href="#contact" style="display:inline-flex;align-items:center;gap:8px;background:var(--grad);color:#fff;padding:14px 28px;border-radius:12px;font-size:14px;font-weight:700;font-family:inherit;text-decoration:none">
+    Parlez-nous de votre projet &nbsp;→
+  </a>
+</div>
+
 <!-- ══ MARKET NUMBERS ══ -->
 <section class="sec">
   <div class="si">
@@ -444,6 +467,15 @@ window.addEventListener('DOMContentLoaded',function(){
     </div>
   </div>
 </section>
+
+
+
+
+<div style="text-align:center;padding:24px 0 48px 0">
+  <a href="#contact" style="display:inline-flex;align-items:center;gap:8px;background:var(--grad);color:#fff;padding:14px 28px;border-radius:12px;font-size:14px;font-weight:700;font-family:inherit;text-decoration:none">
+    Parlez-nous de votre projet &nbsp;→
+  </a>
+</div>
 
 <!-- ══ CASE STUDY ZALAR ══ -->
 <section class="sec sa">
@@ -513,6 +545,15 @@ window.addEventListener('DOMContentLoaded',function(){
     </div>
   </div>
 </section>
+
+
+
+
+<div style="text-align:center;padding:24px 0 48px 0">
+  <a href="#contact" style="display:inline-flex;align-items:center;gap:8px;background:var(--grad);color:#fff;padding:14px 28px;border-radius:12px;font-size:14px;font-weight:700;font-family:inherit;text-decoration:none">
+    Parlez-nous de votre projet &nbsp;→
+  </a>
+</div>
 
 <!-- ══ LIVRABLES avec images Unsplash libres de droit ══ -->
 <section class="sec sa">
@@ -597,6 +638,15 @@ window.addEventListener('DOMContentLoaded',function(){
   </div>
 </section>
 
+
+
+
+<div style="text-align:center;padding:24px 0 48px 0">
+  <a href="#contact" style="display:inline-flex;align-items:center;gap:8px;background:var(--grad);color:#fff;padding:14px 28px;border-radius:12px;font-size:14px;font-weight:700;font-family:inherit;text-decoration:none">
+    Parlez-nous de votre projet &nbsp;→
+  </a>
+</div>
+
 <!-- ══ COMMENT ÇA MARCHE — section complète à sa place ══ -->
 <section class="sec">
   <div class="si">
@@ -611,6 +661,15 @@ window.addEventListener('DOMContentLoaded',function(){
     </div>
   </div>
 </section>
+
+
+
+
+<div style="text-align:center;padding:24px 0 48px 0">
+  <a href="#contact" style="display:inline-flex;align-items:center;gap:8px;background:var(--grad);color:#fff;padding:14px 28px;border-radius:12px;font-size:14px;font-weight:700;font-family:inherit;text-decoration:none">
+    Parlez-nous de votre projet &nbsp;→
+  </a>
+</div>
 
 <!-- ══ POUR QUI ══ -->
 <section class="sec sa">
@@ -667,6 +726,15 @@ window.addEventListener('DOMContentLoaded',function(){
   </div>
 </section>
 
+
+
+
+<div style="text-align:center;padding:24px 0 48px 0">
+  <a href="#contact" style="display:inline-flex;align-items:center;gap:8px;background:var(--grad);color:#fff;padding:14px 28px;border-radius:12px;font-size:14px;font-weight:700;font-family:inherit;text-decoration:none">
+    Parlez-nous de votre projet &nbsp;→
+  </a>
+</div>
+
 <!-- ══ FAQ ══ -->
 <section class="sec">
   <div class="si">
@@ -696,6 +764,111 @@ window.addEventListener('DOMContentLoaded',function(){
     </div>
   </div>
 </section>
+
+
+<!-- ══ FORMULAIRE CONTACT ══ -->
+<section class="sec" id="contact">
+  <div class="si">
+    <span class="stag">Parlez-nous de votre projet</span>
+    <h2 class="st">Décrivez votre projet.<br><span class="g">On revient vers vous sous 24h.</span></h2>
+    <p style="font-size:15px;color:var(--mu);margin-top:12px;margin-bottom:40px">Pas de commercial agressif. Juste une conversation sur ce qu'on peut faire pour votre marque.</p>
+
+    <form id="contact-form" style="display:flex;flex-direction:column;gap:16px;max-width:640px;margin:0 auto"
+      action="https://script.google.com/macros/s/AKfycbzUS3qBqimH1PEifDmp5s1_5xCkT09uswk8bGB4lHJ4K8yvMA--WDcsLPATZ1j09V53/exec" method="POST">
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+        <div>
+          <label style="font-size:12px;color:var(--mu);display:block;margin-bottom:6px;letter-spacing:.05em;text-transform:uppercase">Prénom *</label>
+          <input type="text" name="prenom" required placeholder="Votre prénom"
+            style="width:100%;background:var(--s2);border:1px solid var(--bd);border-radius:10px;padding:14px 16px;color:#fff;font-size:14px;font-family:inherit;outline:none;transition:border .2s"
+            onfocus="this.style.borderColor='rgba(139,79,212,.6)'" onblur="this.style.borderColor='var(--bd)'">
+        </div>
+        <div>
+          <label style="font-size:12px;color:var(--mu);display:block;margin-bottom:6px;letter-spacing:.05em;text-transform:uppercase">Entreprise *</label>
+          <input type="text" name="entreprise" required placeholder="Nom de votre entreprise"
+            style="width:100%;background:var(--s2);border:1px solid var(--bd);border-radius:10px;padding:14px 16px;color:#fff;font-size:14px;font-family:inherit;outline:none;transition:border .2s"
+            onfocus="this.style.borderColor='rgba(139,79,212,.6)'" onblur="this.style.borderColor='var(--bd)'">
+        </div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+        <div>
+          <label style="font-size:12px;color:var(--mu);display:block;margin-bottom:6px;letter-spacing:.05em;text-transform:uppercase">WhatsApp / Téléphone *</label>
+          <input type="tel" name="telephone" required placeholder="06 XX XX XX XX"
+            style="width:100%;background:var(--s2);border:1px solid var(--bd);border-radius:10px;padding:14px 16px;color:#fff;font-size:14px;font-family:inherit;outline:none;transition:border .2s"
+            onfocus="this.style.borderColor='rgba(139,79,212,.6)'" onblur="this.style.borderColor='var(--bd)'">
+        </div>
+        <div>
+          <label style="font-size:12px;color:var(--mu);display:block;margin-bottom:6px;letter-spacing:.05em;text-transform:uppercase">Secteur d'activité *</label>
+          <select name="secteur" required
+            style="width:100%;background:var(--s2);border:1px solid var(--bd);border-radius:10px;padding:14px 16px;color:#fff;font-size:14px;font-family:inherit;outline:none;appearance:none;cursor:pointer;transition:border .2s"
+            onfocus="this.style.borderColor='rgba(139,79,212,.6)'" onblur="this.style.borderColor='var(--bd)'">
+            <option value="" disabled selected style="color:var(--mu)">Choisir...</option>
+            <option value="Agroalimentaire">Agroalimentaire</option>
+            <option value="Cosmétique & Beauté">Cosmétique & Beauté</option>
+            <option value="Hôtellerie">Hôtellerie</option>
+            <option value="Retail & Vêtements">Retail & Vêtements</option>
+            <option value="Automobile">Automobile</option>
+            <option value="Événementiel">Événementiel</option>
+            <option value="Autre">Autre</option>
+          </select>
+        </div>
+      </div>
+
+      <div>
+        <label style="font-size:12px;color:var(--mu);display:block;margin-bottom:6px;letter-spacing:.05em;text-transform:uppercase">Décrivez votre projet</label>
+        <textarea name="projet" rows="4" placeholder="Quel produit ? Quel objectif ? Quel délai ?"
+          style="width:100%;background:var(--s2);border:1px solid var(--bd);border-radius:10px;padding:14px 16px;color:#fff;font-size:14px;font-family:inherit;outline:none;resize:vertical;min-height:120px;transition:border .2s"
+          onfocus="this.style.borderColor='rgba(139,79,212,.6)'" onblur="this.style.borderColor='var(--bd)'"></textarea>
+      </div>
+
+      <button type="submit"
+        style="background:var(--grad);color:#fff;border:none;border-radius:12px;padding:16px 32px;font-size:15px;font-weight:700;font-family:inherit;cursor:pointer;transition:opacity .2s,transform .2s;align-self:flex-start"
+        onmouseover="this.style.opacity='.85';this.style.transform='translateY(-2px)'"
+        onmouseout="this.style.opacity='1';this.style.transform='translateY(0)'">
+        Envoyer ma demande →
+      </button>
+
+      <div id="form-success" style="display:none;background:rgba(34,197,94,.1);border:1px solid rgba(34,197,94,.3);border-radius:10px;padding:16px;color:#4ade80;font-size:14px">
+        ✅ Message reçu ! On vous recontacte sous 24h sur WhatsApp.
+      </div>
+    </form>
+
+    <script>
+    document.getElementById('contact-form').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const form = e.target;
+      const btn = form.querySelector('button[type="submit"]');
+      btn.textContent = 'Envoi en cours...';
+      btn.disabled = true;
+      try {
+        const formData = new FormData(form);
+        const data = {};
+        formData.forEach((v,k) => data[k]=v);
+        const res = await fetch(form.action, {
+          method: 'POST',
+          body: JSON.stringify(data),
+          headers: { 'Content-Type': 'application/json' }
+        });
+        if (res.ok || res.type === 'opaque') {
+          form.reset();
+          document.getElementById('form-success').style.display = 'block';
+          btn.style.display = 'none';
+        } else {
+          btn.textContent = 'Erreur — réessayez';
+          btn.disabled = false;
+        }
+      } catch {
+        btn.textContent = 'Erreur — réessayez';
+        btn.disabled = false;
+      }
+    });
+    </script>
+  </div>
+</section>
+
+
+
 
 <!-- ══ CTA ══ CTA ══ -->
 <section class="cta-sec">
@@ -737,3 +910,12 @@ window.addEventListener('DOMContentLoaded',function(){
     <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
   </svg>
 </a>
+<script>
+document.querySelectorAll('a[href="#contact"]').forEach(function(a){
+  a.addEventListener("click",function(e){
+    e.preventDefault();
+    var el=document.getElementById("contact");
+    if(el) el.scrollIntoView({behavior:"smooth"});
+  });
+});
+</script>
